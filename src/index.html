@@ -4,26 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-      class="search-form-input"
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit" id="search-form-button">Search<i class="fa fa-search"></i></button>
-
-
-      <button type="submit" class="load-more"> Load More</button>
-    </form>
-    <div class="gallery">
-      <div id="sentinel"><span class="sentinel__text is-hidden">We're sorry, but you've reached the end of search results.</span></div>
-      <!-- Карточки изображений -->
-    </div>
-    
-    <script src="./index.js" type="module"></script>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <!-- <include src="./partials/example.html"></include> -->
+    <include src="./partials/imageSearchApp.html"></include>
   </body>
 </html>
